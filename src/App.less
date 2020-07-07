@@ -1,0 +1,104 @@
+.home {
+    ///deep/.home-head {
+    &-head {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #fff;
+        padding: 0 40px;
+        box-shadow: 4px -2px 6px #ccc;
+        &-logo {
+            height: 44px;
+            padding: 0 10px;
+            &-img{
+                height: 100%;
+            }
+        }
+        &-login {
+            /* display: flex;
+            align-items: center; */
+            text-align: center;
+            padding: 0 10px;
+            font-size: 12px;
+            cursor: pointer;
+            &-img {
+                height: 36px;
+            }
+        }
+    }
+    &-left {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        top: 100px;
+        background: #fff;
+        width: 280px;
+        box-shadow: -2px -2px 6px #ccc;
+        &-li {
+            display: flex;
+            align-items: center;
+            padding: 60px 0 60px 30px;
+            position: relative;
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                bottom: 0;
+                width: 80%;
+                border-bottom: 1px solid #e5e5e5;
+            }
+        }
+        &-ico {
+            height: 60px;
+            &-img {
+                height: 100%;
+                margin-right: 20px;
+            }
+        }
+        &-con {
+            &-tit{
+                font-size: 34px;
+            }
+        }
+    }
+    &-right{
+        margin: 100px 0 0 280px;
+        padding-top: 80px;
+    }
+    &-face {
+        width: 200px;
+        height: 200px;
+        border: 2px solid #ccc;
+        margin: 0 auto;
+        margin-bottom: 60px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center; /* 水平居中 */
+        align-items: center;     /* 垂直居中 */
+    }
+    &-nav {
+        display: flex;
+        justify-content: center;
+        margin: 0 40px;
+        &-tab {
+            margin: 0 30px;
+            width: 140px;
+            cursor: pointer;
+            &-img {
+                width: 100%;
+            }
+        }
+    }
+    &-bot{
+        text-align: center;
+        padding: 20px 0 0;
+        &-li{
+            margin: 0 10px;
+        }
+    }
+}
